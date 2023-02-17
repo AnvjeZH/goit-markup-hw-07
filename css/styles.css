@@ -144,6 +144,7 @@ body {
 /* =====================/COMPONENTS============================ */
 
 /* ======================HEADER============================== */
+
 .header {
   margin-right: auto;
   margin-left: auto;
@@ -153,6 +154,11 @@ body {
   border-bottom: 1px solid var(--border-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    padding-bottom: 10px;
+  }
 }
 .header-box {
   display: flex;
@@ -204,7 +210,12 @@ body {
 
   transition: color var(--animation);
 }
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-link {
+    padding-top: 20px;
+    padding-bottom: 23px;
+  }
+}
 .header-nav .menu-link.current {
   color: var(--brand-color);
 }
@@ -227,30 +238,51 @@ body {
 
   background-color: var(--accent-color);
 }
-.contacts-box {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .contacts-link {
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    font-style: normal;
+    line-height: 1.5px;
+    letter-spacing: 0.02em;
+
+    color: currentColor;
+
+    transition: color var(--animation);
+  }
 }
-.contacts-list {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-box {
+    display: block;
+    margin-left: auto;
+  }
+  .contacts-list {
+    display: block;
+  }
+  .contacts-item:not(:last-child) {
+    margin-bottom: 4px;
+  }
+  .contacts-link {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 12px;
+  }
 }
-.contacts-item:not(:last-child) {
-  margin-right: 40px;
-}
 
-.contacts-link {
-  padding-top: 12px;
-  padding-bottom: 12px;
-
-  font-style: normal;
-  line-height: 1.5px;
-  letter-spacing: 0.02em;
-
-  color: currentColor;
-
-  transition: color var(--animation);
+@media screen and (min-width: 1200px) {
+  .contacts-box {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .contacts-list {
+    display: flex;
+    align-items: center;
+  }
+  .contacts-item:not(:last-child) {
+    margin-right: 40px;
+  }
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -261,7 +293,7 @@ body {
 
 /* ======================HERO================================= */
 .hero {
-  max-width: 1440px;
+  max-width: 428px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 112px;
@@ -278,11 +310,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     padding-bottom: 108px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
   }
@@ -328,6 +362,7 @@ body {
 
   color: var(--button-text-color);
   background-color: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   cursor: pointer;
 
@@ -954,11 +989,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  min-width: 408px;
-  min-height: 576px;
+  min-width: 392px;
+  min-height: 586px;
   padding-top: 72px;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 16px;
+  padding-left: 16px;
   padding-bottom: 24px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -967,6 +1002,13 @@ body {
   background-color: var(--modal-window-bg-cl);
 
   transition: transform var(--modal-animation), opacity var(--modal-animation);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 408px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, 50%);
