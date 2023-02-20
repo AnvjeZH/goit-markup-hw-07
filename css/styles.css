@@ -64,6 +64,7 @@ body {
   color: var(--primary-text-color);
   background-color: var(--main-background-color);
   font-size: 16px;
+  letter-spacing: 0.02em;
 }
 /* =======================/GLOBAL SETTINGS====================*/
 
@@ -125,7 +126,6 @@ body {
 .section-title {
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
 }
@@ -133,13 +133,11 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  /* letter-spacing: 0.02em; */
 
   color: var(--primary-text-color);
 }
 .section-text {
   line-height: 1.5;
-  /* letter-spacing: 0.02em; */
 
   color: var(--body-text-color);
 }
@@ -211,7 +209,6 @@ body {
 
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.02em;
 
     color: currentColor;
 
@@ -455,9 +452,6 @@ body {
   .principles-item {
     flex-basis: calc((100% - 24px) / 2);
   }
-  /* .principles-item:not(:last-child) {
-    margin-bottom: 0;
-  } */
 }
 @media screen and (min-width: 1200px) {
   .principles-list {
@@ -488,8 +482,6 @@ body {
   line-height: 1.11;
 
   text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
 
   color: var(--primary-text-color);
 }
@@ -509,7 +501,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+
   color: var(--body-text-color);
 }
 @media screen and (min-width: 1200px) {
@@ -1160,7 +1152,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.02em;
 }
 /* ==========================MODAL FORM=============================== */
 .order-form-label {
@@ -1344,7 +1335,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
 
@@ -1379,7 +1369,6 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
 
   color: var(--body-text-color);
   transition: color var(--animation);
