@@ -70,18 +70,15 @@ body {
 
 /* =====================COMPONENTS============================ */
 .container {
-  padding-right: 16px;
-  padding-left: 16px;
+  max-width: 428px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 
   /* outline: 2px solid red; */
 }
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 428px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -90,8 +87,6 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
-    padding-right: 15px;
-    padding-left: 15px;
   }
 }
 .link-none {
@@ -643,11 +638,6 @@ body {
 
 /* =======================/SECTION TREE======================== */
 /* =======================SECTION FOUR=========================== */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .customers-container {
-    max-width: 576px;
-  }
-}
 .customers-title {
   margin-left: auto;
   margin-right: auto;
@@ -670,7 +660,7 @@ body {
     column-gap: 24px;
   }
   .customers-item {
-    flex-basis: calc((100% - 24px * 2) / 3);
+    flex-basis: calc((100% - 234px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -719,6 +709,19 @@ body {
     padding-bottom: 100px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    width: 565px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    display: flex;
+  }
+}
 .footer .logo-link {
   display: block;
   margin-right: 0;
@@ -756,25 +759,6 @@ body {
   }
   .footer-center-part {
     margin-right: 80px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-box {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .tablet-thumb {
-    display: flex;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-box {
-    padding-left: 108px;
-    padding-right: 164px;
-  }
-  .tablet-thumb {
-    margin-bottom: 72px;
-    gap: 24px;
   }
 }
 
@@ -1089,7 +1073,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  min-width: 392px;
+  min-width: 300px;
   min-height: 586px;
   padding-top: 72px;
   padding-right: 16px;
@@ -1102,6 +1086,11 @@ body {
   background-color: var(--modal-window-bg-cl);
 
   transition: transform var(--modal-animation), opacity var(--modal-animation);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 392px;
+  }
 }
 @media screen and (min-width: 768px) {
   .modal {
@@ -1267,7 +1256,7 @@ body {
 
   transition: background-color var(--animation), border-color var(--animation);
 
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' fill='none'%3E%3Cpath fill='%23F4F4FD' d='M8.446.255A.917.917 0 0 1 10 .901a.928.928 0 0 1-.242.649L4.864 7.704a.92.92 0 0 1-1.019.229.92.92 0 0 1-.306-.204L.293 4.466a.925.925 0 0 1-.226-1.024.925.925 0 0 1 .87-.578.916.916 0 0 1 .656.294L4.162 5.74 8.422.282a.329.329 0 0 1 .025-.027h-.001Z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' fill='none'%3E%3Cpath fill='%23FFFFFF' d='M8.446.255A.917.917 0 0 1 10 .901a.928.928 0 0 1-.242.649L4.864 7.704a.92.92 0 0 1-1.019.229.92.92 0 0 1-.306-.204L.293 4.466a.925.925 0 0 1-.226-1.024.925.925 0 0 1 .87-.578.916.916 0 0 1 .656.294L4.162 5.74 8.422.282a.329.329 0 0 1 .025-.027h-.001Z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1356,6 +1345,7 @@ body {
 .mobile-menu-tel {
   font-weight: 600;
   font-style: normal;
+  font-size: 26px;
 
   color: var(--brand-color);
   transition: color var(--animation);
@@ -1367,7 +1357,7 @@ body {
 .mobile-menu-mail {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
 
   color: var(--body-text-color);
@@ -1382,6 +1372,6 @@ body {
   height: 24px;
 }
 .menu-container .socials-list {
-  gap: 44px;
+  gap: 24px;
 }
 /* ========================/MOBILE MENU================================== */
