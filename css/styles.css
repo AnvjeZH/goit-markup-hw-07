@@ -28,7 +28,7 @@
   --modal-animation: 500ms linear;
 
   /* Breakpoints */
-  --phone-screen: 480px;
+  --phone-screen: 428px;
   --tablet-screen: 768px;
   --desktop-screen: 1200px;
 }
@@ -296,7 +296,6 @@ body {
 
 /* ======================HERO================================= */
 .hero {
-  max-width: 428px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 112px;
@@ -322,7 +321,7 @@ body {
       url(../images/hero/hero-bg-img_mob@2x.jpg);
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 429px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -364,7 +363,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     padding-bottom: 108px;
   }
 }
@@ -783,6 +781,7 @@ body {
 }
 
 .footer .socials-list {
+  justify-content: center;
   gap: 16px;
 }
 .footer .socials-link {
@@ -1087,7 +1086,7 @@ body {
 
   transition: transform var(--modal-animation), opacity var(--modal-animation);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 428px) {
   .modal {
     min-width: 392px;
   }
@@ -1279,7 +1278,11 @@ body {
   cursor: pointer;
   border: none;
 }
-
+@media (min-width: 428px) {
+  .menu-toggle {
+    max-width: 428px;
+  }
+}
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -1329,6 +1332,9 @@ body {
 
   transition: color var(--animation);
 }
+.mobile-menu-link.current {
+  color: var(--brand-color);
+}
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
   color: var(--accent-color);
@@ -1350,6 +1356,11 @@ body {
   color: var(--brand-color);
   transition: color var(--animation);
 }
+@media (min-width: 428px) {
+  .mobile-menu-tel {
+    font-size: 35px;
+  }
+}
 .mobile-menu-tel:hover,
 .mobile-menu-tel:focus {
   color: var(--accent-color);
@@ -1363,15 +1374,29 @@ body {
   color: var(--body-text-color);
   transition: color var(--animation);
 }
+@media (min-width: 428px) {
+  .mobile-menu-mail {
+    font-size: 20px;
+  }
+}
 .mobile-menu-mail:hover,
 .mobile-menu-mail:focus {
   color: var(--accent-color);
 }
+.menu-container .socials-list {
+  justify-content: flex-start;
+}
+
 .menu-container .socials-icon {
   width: 24px;
   height: 24px;
 }
 .menu-container .socials-list {
   gap: 24px;
+}
+@media (min-width: 428px) {
+  .menu-container .socials-list {
+    gap: 64px;
+  }
 }
 /* ========================/MOBILE MENU================================== */
